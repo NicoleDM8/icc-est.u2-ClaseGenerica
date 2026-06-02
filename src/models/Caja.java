@@ -2,7 +2,7 @@ package models;
 
 public class Caja <T> {
     private T contenido;
-    public void Caja(objeto : T){
+    public Caja( T objeto ){
         this.contenido = objeto;
     }
     public void guardar(T objeto){
@@ -10,6 +10,10 @@ public class Caja <T> {
     }
     public T obtener() {
         return this.contenido;
+    }
+
+    public boolean estaVacia(){
+        return this.contenido == null;
     }
   
 }

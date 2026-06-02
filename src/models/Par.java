@@ -3,10 +3,11 @@ package models;
 public class Par <K,V> {
     private K clave;
     private V valor;
-    public void Par( clave: K){
+    public Par( K clave, V valor ){
         this.clave = clave;
-    } 
-    public void guardarValor( valor : V){
+        this.valor = valor;
+    }
+    public void guardarValor( V valor){
         this.valor = valor;
     }
     public K obtenerClave(){
